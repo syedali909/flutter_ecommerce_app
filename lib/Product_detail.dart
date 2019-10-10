@@ -125,7 +125,7 @@ class _ProductDetailState extends State<ProductDetail> {
                   onPressed: (){},
                   color: Colors.red,
                   textColor: Colors.white,
-                  elevation: 0.2,
+                  elevation: 0.3,
                   child: new Text("Buy now "),
                 ),
               ),
