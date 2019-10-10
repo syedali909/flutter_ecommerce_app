@@ -126,7 +126,7 @@ class _ProductDetailState extends State<ProductDetail> {
                   color: Colors.red,
                   textColor: Colors.white,
                   elevation: 0.2,
-                  child: new Text("Buy now"),
+                  child: new Text("Buy now "),
                 ),
               ),
               IconButton(icon: Icon(Icons.add_shopping_cart,color: Colors.red ,),onPressed:() {},),
