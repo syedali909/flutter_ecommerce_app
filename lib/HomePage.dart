@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
               child: Text("Recent Product") , ),
 
             Container(
-              height: 320,
+              height: 330,
               child : Product(),
             )
           ],
