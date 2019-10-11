@@ -17,10 +17,10 @@ class _ProductState extends State<Product> {
       "price": 85,
     },
     {
-      "name": "Red dress",
-      "picture": "images/products/dress1.jpeg",
-      "old_price": 100,
-      "price": 50,
+      "name": "Blazer",
+      "picture": "images/products/blazer2.jpeg",
+      "old_price": 120,
+      "price": 85,
     },
     {
       "name": "Red dress",
@@ -30,25 +30,49 @@ class _ProductState extends State<Product> {
     },
     {
       "name": "Red dress",
-      "picture": "images/products/dress1.jpeg",
+      "picture": "images/products/dress2.jpeg",
       "old_price": 100,
       "price": 50,
     },
     {
       "name": "Red dress",
-      "picture": "images/products/dress1.jpeg",
+      "picture": "images/products/hills1.jpeg",
       "old_price": 100,
       "price": 50,
     },
     {
       "name": "Red dress",
-      "picture": "images/products/dress1.jpeg",
+      "picture": "images/products/hills2.jpeg",
       "old_price": 100,
       "price": 50,
     },
     {
       "name": "Red dress",
-      "picture": "images/products/dress1.jpeg",
+      "picture": "images/products/pants1.jpg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Red dress",
+      "picture": "images/products/pants2.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Red dress",
+      "picture": "images/products/skt1.jpeg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Red dress",
+      "picture": "images/products/shoe1.jpg",
+      "old_price": 100,
+      "price": 50,
+    },
+    {
+      "name": "Red dress",
+      "picture": "images/products/skt2.jpeg",
       "old_price": 100,
       "price": 50,
     }
@@ -99,25 +123,14 @@ class Single_Product extends StatelessWidget {
               ))),
               child: GridTile(
                   footer: Container(
-                    color: Colors.white70,
-                    child: ListTile(
-                      leading: Text(
-                        prod_name,
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      title: Text(
-                        "\$$prod_price",
-                        style: TextStyle(
-                            color: Colors.red, fontWeight: FontWeight.w800),
-                      ),
-                      subtitle: Text(
-                        "\$$prod_old_price",
-                        style: TextStyle(
-                            color: Colors.black54,
-                            fontWeight: FontWeight.w800,
-                            decoration
-                                :TextDecoration.lineThrough),
-                      ),
+                    color: Colors.white,
+                    child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            child: Text(prod_name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16.0),),
+                          ),
+                          Text("\$${prod_price}",style: TextStyle(color: Colors.red),)
+                        ],
                     ),
                   ),
                   child: Image.asset(

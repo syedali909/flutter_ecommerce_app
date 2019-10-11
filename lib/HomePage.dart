@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_ecommerce_app/component/Horzontal_List.dart';
 import 'package:flutter_ecommerce_app/component/Product.dart';
+import 'package:flutter_ecommerce_app/pages/cart.dart';
 
 
 
@@ -41,7 +42,9 @@ class _HomePageState extends State<HomePage> {
             title: Text("FashApp"),
             actions: <Widget>[
                IconButton(icon: Icon(Icons.search,color: Colors.white,), onPressed: null),
-              IconButton(icon: Icon(Icons.shopping_cart,color: Colors.white,), onPressed: null)
+              IconButton(icon: Icon(Icons.shopping_cart,color: Colors.white,), onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder:(context) => Cart() ));
+              })
 
             ],
 
